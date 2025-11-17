@@ -3,61 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendação de Filmes - Contato</title>
+    <title>Cine Dicas - Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container header-flex">
+            <div class="logo">🎬 Cine Dicas</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Fale Conosco</h1>
-        <p>Preencha o formulário abaixo para enviar suas dúvidas, sugestões ou recomendações de filmes. Nossa equipe entrará em contato!</p>
+    <main class="container">
+        <header class="page-title">
+            <h1>Fale Conosco</h1>
+        </header>
+        
+        <section class="form-wrapper">
+            <p>Preencha o formulário abaixo para enviar suas dúvidas, sugestões ou recomendações.</p>
 
-        <form action="#" method="POST">
-            
-            <div>
-                <label for="nome">Nome Completo:</label><br>
-                <input type="text" id="nome" name="nome" required placeholder="Seu nome aqui">
-            </div>
+            <form id="formContato" novalidate>
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome aqui">
+                    <small class="error-msg">Por favor, insira seu nome.</small>
+                </div>
 
-            <br>
-            
-            <div>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
-            </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+                    <small class="error-msg">Insira um e-mail válido.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone (opcional):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
 
-            <br>
-            
-            <div>
-                <label for="telefone">Telefone (opcional):</label><br>
-                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="mensagem">Mensagem/Sugestão:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" cols="40" required placeholder="Escreva sua mensagem aqui..."></textarea>
-            </div>
-
-            <br>
-            
-            <button type="submit">Enviar Mensagem</button>
-
-        </form>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem/Sugestão:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <small class="error-msg">A mensagem não pode ficar vazia.</small>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 - Kojão - Cine Dicas. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

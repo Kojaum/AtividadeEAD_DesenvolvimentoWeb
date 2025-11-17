@@ -3,50 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendação de Filmes - Início</title>
+    <title>Cine Dicas - Início</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container header-flex">
+            <div class="logo">🎬 Cine Dicas</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Cine Dicas: Sua Plataforma de Recomendação de Filmes</h1>
+    <main class="container">
+        <header class="page-title">
+            <h1>Sua Plataforma de Recomendação</h1>
+        </header>
 
-        <section>
+        <section class="intro">
             <h2>Bem-vindo(a) ao Cine Dicas!</h2>
             <p>
-                Cansado(a) de procurar o que assistir? Nós facilitamos sua vida! Aqui você encontra uma curadoria de filmes imperdíveis, de clássicos atemporais a lançamentos que estão dando o que falar. Nossa missão é garantir que sua próxima sessão de cinema seja inesquecível.
+                Cansado(a) de procurar o que assistir? Nós facilitamos sua vida! Aqui você encontra uma curadoria de filmes imperdíveis, de clássicos atemporais a lançamentos que estão dando o que falar.
             </p>
-            <p>
-                Explore nossas recomendações abaixo e, se tiver alguma sugestão ou feedback, não hesite em nos contatar através da página de contato.
-            </p>
+            <a href="contato.html" class="btn">Envie uma sugestão</a>
         </section>
 
-        <section>
+        <section class="highlight">
             <h2>Nossa Capa em Destaque</h2>
-            <img 
-                src="img01.jpg" 
-                alt="Um rolo de filme e pipoca sob uma luz dramática, representando uma noite de cinema."
-                width="600" 
-                height="300"
-            >
+            <div class="image-wrapper">
+                <img 
+                    src="img01.jpg" 
+                    alt="Um rolo de filme e pipoca sob uma luz dramática"
+                    class="responsive-img"
+                >
+            </div>
         </section>
 
-        <section>
+        <section class="recommendations">
             <h2>Recomendações Imperdíveis</h2>
-            <ul>
-                <li><a href="https://www.imdb.com/title/tt0111161/" target="_blank">Um Sonho de Liberdade (Clássico)</a></li>
-                <li><a href="https://www.imdb.com/title/tt1375666/" target="_blank">A Origem (Ficção Científica)</a></li>
-                <li><a href="https://www.imdb.com/title/tt0468569/" target="_blank">Batman: O Cavaleiro das Trevas (Super-Herói)</a></li>
-                <li><a href="https://www.rottentomatoes.com/" target="_blank">Mais Filmes no Rotten Tomatoes</a></li>
-            </ul>
+            <div class="card-grid">
+                <a href="https://www.imdb.com/title/tt0111161/" target="_blank" class="card">
+                    <h3>Um Sonho de Liberdade</h3>
+                    <p>Gênero: Clássico / Drama</p>
+                </a>
+                <a href="https://www.imdb.com/title/tt1375666/" target="_blank" class="card">
+                    <h3>A Origem</h3>
+                    <p>Gênero: Ficção Científica</p>
+                </a>
+                <a href="https://www.imdb.com/title/tt0468569/" target="_blank" class="card">
+                    <h3>Batman: O Cavaleiro das Trevas</h3>
+                    <p>Gênero: Super-Herói</p>
+                </a>
+                <a href="https://www.rottentomatoes.com/" target="_blank" class="card highlight-card">
+                    <h3>Explorar Mais</h3>
+                    <p>Veja no Rotten Tomatoes &rarr;</p>
+                </a>
+            </div>
         </section>
     </main>
 
